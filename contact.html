@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/547f0561c5.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TNGZ5XVWET"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-TNGZ5XVWET');
+	</script>
+	<title>Gallery</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class = "skip" href="#main">Skip to Main Content</a>
+			<ul>
+				<li><a href = "index.html" >Home</a></li>
+				<li><a href = "menu.html">Menu</a></li>
+				<li><a href = "team.html">Our Team</a></li>
+				<li class="active"><a href = "contact.html">Contact</a></li>
+				<li><a href = "community.html">Coffee Shop Network</a></li>
+			</ul>
+		</nav>
+
+
+	</header>
+
+
+	<main id="main">
+		<h1>Connect with Us</h1>
+		<img src="images/logo.png" alt="" id = "logo">
+		<form action="https://formspree.io/f/myyopwbo" method="post">
+			<fieldset>
+			  <legend>Leave us a Note</legend>
+				<br>
+			
+			<div class="name">
+			  <i class="fa-solid fa-user"></i>
+			  <label for="name_id"> 
+				Name
+			  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+			</label>
+			</div>
+
+			<div class ="email">
+			<i class="fa-solid fa-envelope"></i>
+			<label for="email_id">
+				Email
+			  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+			</label>
+			</div>
+
+			<div class = "phone">
+			<i class="fa-solid fa-phone-flip"></i>
+			<label for="phone_id">Phone Number
+			  <input type="tel" id="phone_id" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			</label>
+			</div>
+
+			<div class="note">
+			  <label for="note">Note
+			  <textarea placeholder="Message" id = "note" name="mesg" required></textarea><br>
+			</label>
+			</div>
+
+			  <button type="submit">Submit Note</button> 
+
+			</fieldset>
+		   </form>
+
+	</main>
+	<footer>
+		<p>Grace Song &copy; 2022</p>
+	</footer>
+</body>
+</html>
+
+
