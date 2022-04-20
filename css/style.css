@@ -16,12 +16,13 @@ h2{
 	padding: 10px;
 	text-align: center;
 	background: linear-gradient(to right, pink 0%, red 100%);
+	margin: 50px;
 }
 
 h3{
+	font-family: 'Barlow', sans-serif;
 	font-size: 150%;
 	font-weight: bold;
-	font-family: inherit;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-top: 20px;
@@ -29,17 +30,29 @@ h3{
 }
 
 h4{
+	font-family: 'Barlow', sans-serif;
 	font-size: 120%;
 	font-weight: bold;
-	font-family: inherit;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	text-align: center;
+}
+
+h5{
+	text-align: center;
+	padding: 20px;
+	font-family: 'Bebas Neue',sans-serif;
+	font-size: 30px;
 }
 
 main{
 	padding-bottom: 50px;
+}
+
+.review h4{
+	font-style: italic;
 }
 
 
@@ -58,7 +71,7 @@ p{
 	margin-right: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	color: #646464;
+	color: black;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -107,14 +120,13 @@ ul{
 }
 
 li a{
-	/* display: inline-block; */
 	display: flex;
 	color: white;
-	/* /* text-align: center; */
+
 	padding: 10px 10px;
 	text-decoration: none;
 	font-family: 'Barlow', sans-serif;
-	/* margin: 0px 45px 45px 0px; */
+
 	font-weight: 400;
 
 }
@@ -133,24 +145,13 @@ li.active a{
 	text-decoration-thickness: 20%;
 }
 
-.Joey, .Gary{
+.joey, .gary{
 	margin-top: 30px;
 }
 
-.Gary{
+.gary{
 	margin-bottom: 50px;
 }
-.team h2{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'Bebas Neue',sans-serif;
-	font-weight: 400;
-	font-size: 25px;
-	color: black;
-	/* padding-top: 20px; */
-	background: white;
-} 
 
 .team img{
 	opacity: 1;
@@ -160,6 +161,11 @@ li.active a{
 .team{
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.team p{
+	justify-content: center;
+	color: black;
 }
 
 form {
@@ -190,8 +196,9 @@ form i{
 input, textarea {
 	display: block;
 	width: 100%;
-	 font-family:inherit;
+	font-family:inherit;
   	font-size: inherit;
+	
   }
 
 input[type=text], input[type=email], input[type=tel], textarea{
@@ -228,7 +235,6 @@ button[type=submit]{
 
 *:focus{
 	border: 1px solid teal;
-	/* background-color: teal; */
   }
 
 
@@ -257,16 +263,12 @@ button[type=submit]{
 		justify-content: center;
 		border: 3px solid black;
 		border-radius: 5px;
-		width: 100%;
+	width: 100%;
 		margin-top: 50px;
 		opacity: 0.5;
 
 	  }
 
-/* .community-gallery img{
-	opacity: 0.5;
-	border: 5px solid teal;
-} */
 
 
 .community-gallery img:hover{
@@ -278,49 +280,37 @@ button[type=submit]{
 data-title{
 	font-family: 'Bebas Neue',sans-serif;
 }
-	  /* .container img:nth-child(2n){
-		border: 5px dashed teal;
-		border-radius: 5px;
-		width: 100%;
-	} */
+
 
 section{
 	display: block;
 }
 
+.food caption{
+	font-family: inherit;
+	padding: 50px;
+}
 
-.drinks{
-	margin-top: 50px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 50px;
+
+.drinks, .food{
+	margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    grid-row-gap: 30px;
 
 }
 
-.drinks img{
+.drinks img, .food img{
 	object-fit: cover;
     height: 100%;
     width: 100%;
+	max-height: 400px;
 }
 
-.food{
-	margin-top: 50px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 30px;
+.cookie h5{
+	margin-bottom: 30px;
 }
 
-.food img{
-	object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 
 .flip-card {
 	background-color: transparent;
@@ -364,6 +354,9 @@ section{
 
 @media screen and (max-width: 1080px) and (min-width: 810px){
 
+	h5{
+		font-size: 25px;
+	}
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -379,34 +372,49 @@ section{
 		padding: 20px 14px;
 	}
 
-	/* .menu-images{
-		margin-top: 50px;
-		margin-left: 50px;
-		margin-right: 50px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		row-gap: 30px;
-		column-gap: 50px;
-		/* justify-content: center;
-		justify-items: center;
-		align-items: stretch; */
+.community-gallery{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+}
 
-	
-	/* .menu-images img{
-		object-fit: cover;
-		height: 100%;
-		width: 100%;
-	} */
-} 
+.community-gallery img{
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+
+
+.drinks, .food{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    justify-items: center;
+}
+
+
+
+.drinks img, .food img{
+	border: 2px dotted black;
+	/* grid-column: 3 / span 2; */
+	overflow: hidden;
+	width: 300px;
+}
+}
+
 
 @media screen and (min-width: 1081px){
 
+	h5{
+		font-size: 25px;
+	}
 	ul{
 		display: flex;
 		flex-direction: row;
-		/* justify-content: space-around;
-		padding-left: 250px;
-		padding-right: 250px; */
+
 	}
 	
 	
@@ -414,26 +422,36 @@ section{
 		padding: 20px 20px;
 	}
 
-	.drinks{
-		margin-top: 50px;
-		margin-left: 50px;
-		margin-right: 50px;
+
+
+	.drinks, .food{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		row-gap: 30px;
 		column-gap: 50px;
-
-	}
-	.food{
-		margin-top: 50px;
-		margin-left: 50px;
-		margin-right: 50px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		row-gap: 30px;
-		column-gap: 50px;
+		justify-items: center;
 	}
 
+.drink-images img, .food-images img{
+		border: 2px dashed tomato;
+	}
+
+
+
+
+.community-gallery{
+
+		font-family: 'Barlow', sans-serif;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+	}
+.community-gallery img{
+		width: 300px;
+		height: 300px;
+		margin: 10px;
+	}
 }
 
 
