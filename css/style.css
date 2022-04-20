@@ -348,7 +348,7 @@ section{
   }
 
 
-@media screen and (max-width: 1080px) and (min-width: 810px){
+@media screen and (min-width: 810px){
 
 	h5{
 		font-size: 25px;
