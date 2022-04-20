@@ -39,13 +39,19 @@ h4{
 	margin-bottom: 20px;
 	text-align: center;
 }
-
-h5{
+.drinks h3, .food h3{
 	text-align: center;
 	padding: 20px;
 	font-family: 'Bebas Neue',sans-serif;
 	font-size: 30px;
 }
+
+/* h5{
+	text-align: center;
+	padding: 20px;
+	font-family: 'Bebas Neue',sans-serif;
+	font-size: 30px;
+} */
 
 main{
 	padding-bottom: 50px;
@@ -303,7 +309,7 @@ section{
 	max-height: 400px;
 }
 
-.cookie h5{
+.cookie h3{
 	margin-bottom: 30px;
 }
 
@@ -350,9 +356,11 @@ section{
 
 @media screen and (min-width: 810px){
 
-	h5{
+	.drinks h3, .food h3{
 		font-size: 25px;
 	}
+
+
 	ul{
 		display: flex;
 		flex-direction: row;
@@ -404,9 +412,10 @@ section{
 
 @media screen and (min-width: 1081px){
 
-	h5{
+	.drinks h3, .food h3{
 		font-size: 25px;
 	}
+
 	ul{
 		display: flex;
 		flex-direction: row;
